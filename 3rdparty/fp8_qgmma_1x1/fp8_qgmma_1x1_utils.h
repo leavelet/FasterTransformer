@@ -20,7 +20,6 @@
 #include <memory>
 #include <stdint.h>
 #include <stdio.h>
-#include <iostream>
 
 namespace fastertransformer {
 
