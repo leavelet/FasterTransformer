@@ -87,7 +87,7 @@ class Conv1x1 : public Conv1x1Interface {
             return Traits::Dma::Host::getWorkSpaceSize() + Traits::Scheduler::Host::getWorkSpaceSize(K);
         }
 
-        void run(uint8_t* D, uint8_t* A, uint8_t* B, uint16_t* bias, float ab_scale, float d_scale, int N, int H, int W, int C, int K) override {
+        void run(uint8_t* D, uint8_t* A, uint8_t* B, uint16_t* bias, float ab_scale, float d_scale, int N, int H, int W, int C, int K) {
             // ... and if we're already making that assumption, let's just assume multiple of TILE_K so that we don't have to have a check in the epilogue
             assert((K % Traits::TILE_K) == 0);
 
