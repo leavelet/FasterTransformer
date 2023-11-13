@@ -19,6 +19,7 @@
 #include <cuda_fp8.h>
 #include <cuda_runtime.h>
 #include <stdint.h>
+#include <stdio.h>
 
 namespace fastertransformer {
 #ifdef ENABLE_FP8
