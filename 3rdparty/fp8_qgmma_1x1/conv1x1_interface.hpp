@@ -1,6 +1,8 @@
 #ifndef CONV1x1_INTERFACE_HPP_
 #define CONV1x1_INTERFACE_HPP_
 
+#include <stdint.h>
+
 class Conv1x1Interface 
 {
 public:
