@@ -19,6 +19,7 @@
 #include "src/fastertransformer/utils/cuda_bf16_wrapper.h"
 #include "src/fastertransformer/utils/cuda_fp8_utils.h"
 #include "src/fastertransformer/utils/cuda_type_utils.cuh"
+#include <stdio.h>
 #include <stdint.h>
 
 using namespace fastertransformer;
