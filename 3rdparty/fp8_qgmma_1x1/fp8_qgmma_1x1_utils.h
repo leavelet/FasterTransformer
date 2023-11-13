@@ -18,6 +18,8 @@
 #include "conv1x1_interface.hpp"
 #include <unordered_map>
 #include <memory>
+#include <stdint.h>
+#include <stdio.h>
 
 namespace fastertransformer {
 
