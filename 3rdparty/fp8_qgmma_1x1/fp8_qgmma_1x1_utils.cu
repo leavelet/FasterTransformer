@@ -33,6 +33,7 @@ inline void gpuAssert(cudaError_t code, const char *file, int line, bool abort =
 }
 
 #include <vector>
+#include <stdio.h>
 
 #include "conv1x1.cuh"
 #include "fp8_qgmma_1x1_utils.h"
