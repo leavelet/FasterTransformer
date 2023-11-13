@@ -85,13 +85,6 @@ public:
                 free((void**)(&void_ptr), is_host);
                 return malloc(size, is_set_zero, is_host);
             }
-#if !defined(CUDA_MEMORY_POOL_DISABLED)
-            else if (realloc_type == ReallocType::DECREASE) {
-                FT_LOG_DEBUG("ReMalloc the buffer %p to release unused memory to memory pools.", void_ptr);
-                free((void**)(&void_ptr), is_host);
-                return malloc(size, is_set_zero, is_host);
-            }
-#endif
             else {
                 FT_LOG_DEBUG("Reuse original buffer %p with size %d and do nothing for reMalloc.", void_ptr, size);
                 if (is_set_zero) {
